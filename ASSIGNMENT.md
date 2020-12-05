@@ -26,10 +26,6 @@ GIVEN a command-line application that accepts user input
 
 Here are some guidelines to help you get started:
 
-- Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
-
-- Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
-
 - Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
 
 - Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
@@ -52,7 +48,7 @@ This homework is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 40%
 
-- [ ] Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
+- [X] Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
 ## Review
 
