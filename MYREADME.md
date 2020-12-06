@@ -14,23 +14,23 @@
 
 ## Description
 
-A command line tool that generated professional looking README files.
+A command line driven tool that generates professional looking README files.
 
 ## Installation
 
-From a terminal, execute node index.js
+Download the repo to the location of your choosing.
 
 ## Usage
 
-From a terminal, execute node index.js
+From a terminal window, execute the command: node index.js
 
 ## Contributing
 
-I'm open to any contributors who feel they have something to add to the project.
+I am always open to any potential input from others.
 
 ## Tests
 
-No test scripts have been written, but you can run it and compare the output.
+No test scripts have been provided, but running the tool and comparing the output is pretty straightforward.
 
 ## Questions
 
