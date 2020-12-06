@@ -1,41 +1,60 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
 
-// array of questions for user
-const questions = [
+const writeFileAsync = util.promisify(fs.writeFile);
 
-];
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
-
-inquirer
-  .prompt([
+const promptUser = () =>
+  inquirer.prompt([
     {
       type: 'input',
-      message: 'What is your user name?',
+      message: 'What is your GitHub username?',
       name: 'username',
     },
     {
       type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+      message: 'What is your email address?',
+      name: 'email',
     },
     {
       type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+      message: 'What is your project\'s title?',
+      name: 'projectTitle',
     },
-  ])
-  .then((response) => {
-    console.log("Testing");
-  });
+    {
+      type: 'input',
+      message: 'Describe your project:',
+      name: 'description',
+    },
+  ]);
+
+const generateText = (answers) =>
+`
+# ${answers.projectTitle}
+
+## Table of Contents
+
+## Description
+
+${answers.description}
+
+## Installation
+
+## Usage
+
+## Contributing
+
+${answers.username}
+
+## Tests
+
+## Questions
+
+- GitHub: 
+- Email: ${answers.username}
+`;
+
+promptUser()
+  .then((answers) => writeFileAsync('MYREADME.md', generateText(answers)))
+  .then(() => console.log('Successfully wrote MYREADME'))
+  .catch((err) => console.error(err));
