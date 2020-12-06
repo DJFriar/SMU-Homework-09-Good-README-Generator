@@ -1,7 +1,7 @@
 
-# WHoohoo
+# README Generator
 
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![license](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Table of Contents
 
@@ -14,24 +14,24 @@
 
 ## Description
 
-undefined
+A command line tool that generated professional looking README files.
 
 ## Installation
 
-undefined
+From a terminal, execute node index.js
 
 ## Usage
 
-undefined
+From a terminal, execute node index.js
 
 ## Contributing
 
-undefined
+I'm open to any contributors who feel they have something to add to the project.
 
 ## Tests
 
-undefined
+No test scripts have been written, but you can run it and compare the output.
 
 ## Questions
 
-For any questions you can contact me via my [GitHub](https://www.github.com/alksfdjh) or directly via [email](mailto:asd@ad.com).
+For any questions you can contact me via my [GitHub](https://www.github.com/DJFriar) or directly via [email](mailto:tommy.craft@icloud.com).
